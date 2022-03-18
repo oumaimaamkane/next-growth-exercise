@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Next Growth Exercice</title>
+    <!-- Style -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!-- Container Start -->
+    <div class="container" id="container">
+        <h1>Liste des utilisateurs</h1>
+        <!-- Table Card Start-->
+        <div class="card">
+            <table class="table" id="table">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Date de création</th>
+                        <th>Etat</th>
+                        <th>Nom</th>
+                        <th>Prénom</th>
+                        <th>Nom d'utilisateur</th>
+                        <th>Matricule</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="body"></tbody>
+            </table>
+        </div>
+        <!-- Table Card End -->
+        <!-- Button Add user Card Start-->
+        <div class="card">
+            <button type="button" class='add-btn' id="add-btn" onclick="displayModal();" >Ajouter utilisateur</button>
+        </div>
+        <!-- Button Add User Card End -->
+    </div>
+    <!-- Container End -->
+
+    <!-- Modal -Add User -->
+    <div class="modal" id="addModal">
+        <!-- Modal Content Start -->
+        <div class="modal-content">
+
+            <!-- Modal Header Start -->
+            <div class="modal-header">
+                <h1>Ajout d'utilisateur</h1>
+                <!-- Modal Close Button -->
+                <button class="btn" type="button" id="close-btn" onclick="hideModal();"><i class="fa fa-close"></i></button>
+            </div>
+            <!-- Modal Header End -->
+
+            <!-- Modal Body Start -->
+            <div class="modal-body">
+                <!-- Form Start -->
+                <form class="form" id="form" >
+                    <div class="col">
+                        <label class="form-label" for="lastName">Nom</label>
+                        <input class="form-control" type="text" id="lastName" name="lastName">
+                    </div>
+                    <div class="col">
+                        <label class="form-label" for="FirstName">Prénom</label>
+                        <input class="form-control" type="text" id="firstName" name="firstName">
+                    </div>
+                    <div class="col">
+                        <label class="form-label" for="status">Etat</label>
+                        <input class="form-control" type="text" id="status" name="status">
+                    </div>
+                    <div class="col">
+                        <label class="form-label" for="username">Nom d'utilisateur</label>
+                        <input class="form-control" type="text" id="userName" name="userName">
+                    </div>
+                    <div class="col">
+                        <label class="form-label" for="creationDate">Date de création</label>
+                        <input class="form-control" type="date" id="creationDate" name="creationDate">
+                    </div>
+                    <div class="col">
+                        <label class="form-label" for="registrationNumber">Matricule</label>
+                        <input class="form-control" type="text" id="registrationNumber" name="registrationNumber">
+                    </div>
+                    <div class="modal-footer">
+                        <!-- Save User Button -->
+                        <button type="button" class="add-btn" onclick="FormSubmition()">Enregistrer</button>
+                    </div>
+                </form>
+                <!-- Form End -->
+            </div>
+            <!-- Modal Body End -->
+
+        </div>
+        <!-- Modal Content End -->
+    </div>
+    <!-- Modal End -->
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>

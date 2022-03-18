@@ -1,0 +1,124 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.container {
+  margin: 5em;
+}
+.card {
+  margin-bottom: 10px;
+  padding: 20px 20px;
+  background-color: white;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 10px;
+}
+/* Table Style */
+.table {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  border-collapse: collapse;
+}
+.table thead {
+  font-size: 15px;
+  font-weight: 700;
+  color: #5d5d5d;
+}
+td,
+tr,
+th {
+  padding: 10px;
+  text-align: center;
+  font-family: sans-serif;
+  border-bottom: 1px solid #dddddd;
+}
+span {
+  padding: 2px 9px;
+  color: white;
+  width: 19px;
+  border-radius: 10px;
+}
+.btn {
+  padding: 10px;
+  font-size: 15px;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+}
+.add-btn {
+  margin-left: auto;
+  padding: 10px;
+  display: block;
+  font-size: 15px;
+  font-weight: 550;
+  color: #5d5d5d;
+  background-color: #fdb64d;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Modal Style */
+.modal {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -15em;
+  width: 950px;
+  position: relative;
+  display: none;
+  background-color: white;
+  box-shadow: rgba(99, 99, 99, 0.7) 0px 2px 5px 0px;
+  border-radius: 10px;
+  z-index: 1;
+}
+.modal-content {
+  padding: 20px;
+}
+.modal-header {
+  display: flex;
+  font-family: sans-serif;
+  color: #444343;
+}
+.modal-header .btn {
+  margin-left: auto;
+}
+/* Modal Form Style */
+.form {
+  margin: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.form-label {
+  color: #444343;
+  width: 100%;
+}
+.form-control {
+  width: 100%;
+  padding: 5px;
+  display: block;
+  background-color: white;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+.form-control:focus {
+  border: 1px solid #ced4da;
+}
+.modal-footer {
+  display: block;
+  margin-top: 1em;
+  margin-left: auto;
+}
+.col {
+  margin: 1em;
+  width: 250px;
+}
+.valide {
+  background-color: #5be881;
+}
+.rejected {
+  background-color: #ff0000;
+}
+.on-validation {
+  background-color: #fdb64d;
+}
